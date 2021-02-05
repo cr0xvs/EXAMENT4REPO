@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT sede (sucursal)>
+<!ELEMENT sucursal (lugar,trabajador+)>
+<!ELEMENT lugar (#PCDATA)>
+<!ATTLIST sucursal codigo CDATA #REQUIRED>
+<!ELEMENT trabajador (nombre, fecha, observaciones, articulos+)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT observaciones (#PCDATA)>
+<!ELEMENT articulos (unidades+, precio, observacion, plazo)>
+<!ATTLIST articulos codigo CDATA #REQUIRED>
+<!ELEMENT unidades (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT observacion (#PCDATA)>
+<!ELEMENT plazo (#PCDATA)>
